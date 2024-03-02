@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto+Slab:wght@100..900&display=swap");
+
+:root {
+  --azulEscuro: #3270a6;
+  --azulClaro: #5ec8f2;
+  --amarelo: #f2b705;
+  --marrom: #a65526;
+  --vermelho: #d90404;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/wallpaper-bg.png") no-repeat fixed left;
+  background-size: cover;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.custom-container {
+  background: rgba(255, 253, 253, 0.726);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 2px solid var(--azulEscuro);
+  padding: 1.5rem;
+  color: black;
+}
+
+.border-bottom-custom {
+  border-bottom: 4px solid var(--amarelo);
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  padding-bottom: 3px 4px;
+  border-image: linear-gradient(to left, transparent, var(--vermelho)) 1;
+  transition: 1s ease-in;
+}
+
+.border-bottom-custom:hover {
+  border-image: linear-gradient(to left, transparent, var(--amarelo)) 1;
+}
+
+p {
+  text-indent: 10px;
+  line-height: 28px;
+  font-size: 1.1rem;
+}
+
+/* Mugiwara no Ichimi */
+.texto-decorativo {
+  font-family: "Pirata One", system-ui;
+  font-size: 4rem;
+}
+
+
+.card {
+  border: 2px solid var(--amarelo);
+  border-radius: 12px;
+  transition: 09ms ;
+}
+
+.card:hover {
+  border: 2px solid var(--vermelho);
+  box-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+  
+}
